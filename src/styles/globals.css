@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background {
+  background: black;
+  background-image: radial-gradient(
+    circle,
+    green 2px,
+    transparent 0px
+  );
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  
+}
+
+.lower-gradient {
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0)
+  );
+  height: 20vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+div::-webkit-scrollbar {
+  border-radius: 16px;
+  background-color: green;
+  width: 16px;
+}
+
+/* background of the scrollbar except button or resizer */
+div::-webkit-scrollbar-track {
+  border-radius: 16px;
+  background-color: green;
+}
+
+/* scrollbar itself */
+div::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 2px solid green;
+}
+
+/* set button(top and bottom of the scrollbar) */
+div::-webkit-scrollbar-button {
+  display: none;
+}
+.drop-shadow-lg{
+  border: 1px solid green;
+  background: black;
+}
+.sm\:text-base{
+  background: black;
+  border: 1px solid green;
+}
+.md\:translate-x-0{
+  background: black;
+ display: none;
+  width: 0;
+}
+.transition-all{
+  background: black;
+  border: 1px solid green;
+  color: white;
+}
+.transition-all span{
+  color: white;
+}
+.transition-all input{
+  color: green;
+}
+.outline-none{
+  background: black;
+  border: 2px solid green;
+  outline-offset: 0;
+  outline: none;
+}
